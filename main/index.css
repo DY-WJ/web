@@ -1,0 +1,654 @@
+/*--------------------상단바 고정--------------------*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+.navbar {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    z-index: 1;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: black;
+    color: white;
+}
+.navbar a#login,
+.navbar a#signup {
+    float: right;
+}
+
+
+
+
+
+/*--------------------사이드바--------------------*/
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    background: transparent;
+    backdrop-filter: blur(40px);
+    overflow-x: auto;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 2;
+}
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    color: yellowgreen;
+}
+.testside{
+    position: relative;
+}
+.testside dt{
+    top: 0;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+.testside dd{
+    color: white;
+    font-size: 15px;
+}
+.sidebar .closebtn {
+    position: fixed;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+/*--target 선택자를 사용하여 사이드바 토글 --*/
+.sidebar:target {
+    width: 250px;
+}
+.sidebar:target + .content {
+    margin-left: 250px;
+}
+
+
+
+
+
+/*-------------------- 메인페이지01 스타일 --------------------*/
+.container {
+    padding: 10px 0px 10px 0px;
+    width: 90%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    color: yellowgreen;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container2{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*--테마--*/
+.theme {
+    float: left;
+    width: 250px;
+    margin: 12px auto;
+}
+.them_text {
+    float: left;
+    padding: 0 5px 0 0;
+    color: white;
+}
+a.them {
+    display: block;
+    float: left;
+    padding: 0 10px;
+}
+.them img{
+    filter: #ffffff;
+    border: white solid 1px;
+}
+
+/*--검색바--*/
+.search-bar {
+    position: relative;
+    float: right;
+    width: 300px;
+}
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px 20px 10px 40px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.search-bar img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+
+/*--메인이미지--*/
+.main_img {
+    background-image: url(/src/img/background03.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 250px 0;
+    z-index: -1;
+}
+.welcome{
+    background-color: rgb(0, 0, 0, 0.3);
+    width: 100%;
+    border-radius: 100px;
+}
+.main_img h2 {
+    font-size: 3em;
+    color: #fff;
+}
+.main_img p {
+    color: #fff;
+}
+
+
+
+
+
+/*-------------------- 메뉴바 --------------------*/
+#menu_tab {
+    width: auto;
+    height: 50px;
+    background-color: #fff;
+}
+ul.menu {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1D2123;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ul.menu li {
+    display: inline;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 50px;
+    margin: auto 20px;
+}
+a.nav1:link,
+a.nav1:visited {
+    display: flex;
+    justify-content: center;
+    padding: 0 8px 0 22px;
+    margin: 0 14px;
+    height: 50px;
+    text-decoration: none;
+    background: url("/src/img/house-door-fill.svg") no-repeat left;
+    color: #FFFFFF;
+}
+a.nav2:link,
+a.nav2:visited {
+    display: flex;
+    justify-content: center;
+    padding: 0 8px 0 22px;
+    margin: 0 14px;
+    height: 50px;
+    text-decoration: none;
+    background: url("/src/img/house-door-fill.svg") no-repeat left;
+    color: #FFFFFF;
+}
+a.nav3:link,
+a.nav3:visited {
+    display: flex;
+    justify-content: center;
+    padding: 0 8px 0 22px;
+    margin: 0 14px;
+    height: 50px;
+    text-decoration: none;
+    background: url("/src/img/house-door-fill.svg") no-repeat left;
+    color: #FFFFFF;
+}
+a.nav4:link,
+a.nav4:visited {
+    display: flex;
+    justify-content: center;
+    padding: 0 8px 0 22px;
+    margin: 0 14px;
+    height: 50px;
+    text-decoration: none;
+    background: url("/src/img/house-door-fill.svg") no-repeat left;
+    color: #FFFFFF;
+}
+a.nav5:link,
+a.nav5:visited {
+    display: flex;
+    justify-content: center;
+    padding: 0 8px 0 22px;
+    margin: 0 14px;
+    height: 50px;
+    text-decoration: none;
+    background: url("/src/img/house-door-fill.svg") no-repeat left;
+    color: #FFFFFF;
+}
+a.nav6:link,
+a.nav6:visited {
+    display: flex;
+    justify-content: center;
+    padding: 0 8px 0 22px;
+    margin: 0 14px;
+    height: 50px;
+    text-decoration: none;
+    background: url("/src/img/house-door-fill.svg") no-repeat left;
+    color: #FFFFFF;
+}
+a.nav1:hover,
+a.nav2:hover,
+a.nav3:hover,
+a.nav4:hover,
+a.nav5:hover,
+a.nav6:hover {
+    color: yellowgreen;
+}
+li.currencies {
+    width: 180px;
+    padding: 0 0 0 15px;
+    color: white;
+}
+
+
+
+
+
+/*-------------LEFT_카테고리 및 이주의 HOT MUSIC------------------*/
+.left_content {
+    padding: 0 0 0 5px;
+    float: left;
+    width: 300px;
+    overflow-y: auto;
+}
+.title_box {
+    height: 30px;
+    margin: 5px 0 0 0;
+    padding: 7px 0 7px 0;
+    border-radius: 5px;
+    background-color: #1D2123;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: yellowgreen;
+    line-height: 30px;
+}
+ul.left_menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 14px;
+    position: relative;
+}
+ul.left_menu li {
+    margin: 0;
+    list-style: none;
+}
+ul.left_menu a{
+    color: #FFFFFF;
+    float: left;
+    padding: 0 15px; 
+    line-height: 50px;
+    font-size: 18px;
+}
+ul.left_menu a.grade{
+    color: yellow;
+    font-weight: bold;
+    font-size: 25px;
+}
+ul.left_menu li.odd {
+    height: 50px;
+    display: block;
+    background-color: #242424b9;    
+    background-position: 5px 5px;
+    border-bottom: 1px #ddd9d9 solid;
+    text-decoration: none;
+    color: #504b4b;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+}
+ul.left_menu li.odd a:hover {
+    color: yellowgreen;
+}
+.hidden,
+.hidden2,
+.hidden3,
+.hidden4,
+.hidden5 {
+    position: relative;
+}
+.hidden a,
+.hidden2 a,
+.hidden3 a,
+.hidden4 a,
+.hidden5 a {
+    background-color: black;
+
+}
+.toggle:hover + .hidden_box,
+.toggle:hover + .hidden_box2,
+.toggle:hover + .hidden_box3,
+.toggle:hover + .hidden_box4,
+.toggle:hover + .hidden_box5{
+    display: block;
+}
+.hidden_box {
+    background-color: black;
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: 9%; /* .toggle 아래에 표시 */
+    left: 0;
+    color: white;
+}
+.hidden_box2{
+    background-color: black;
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: 19%;
+    left: 0;
+    color: white;
+}
+.hidden_box3{
+    background-color: black;
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: 29%;
+    left: 0;
+    color: white;
+}
+.hidden_box4{
+    background-color: black;
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: 39%;
+    left: 0;
+    color: white;
+}
+.hidden_box5{
+    background-color: black;
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: 49%;
+    left: 0;
+    color: white;
+}
+.image-text-hidden,
+.image-text-hidden2,
+.image-text-hidden3,
+.image-text-hidden4,
+.image-text-hidden5 {
+    display: flex;
+    align-items: center; /* 이미지와 텍스트를 수직으로 정렬 */
+}
+.image-text-hidden img,
+.image-text-hidden2 img,
+.image-text-hidden3 img,
+.image-text-hidden4 img,
+.image-text-hidden5 img {
+    width: 90px;
+    border-radius: 15px;
+    margin: 10px;
+    vertical-align: middle; /* 이미지를 수직으로 중앙에 정렬 */
+}
+.image-text-hidden .text,
+.image-text-hidden2 .text,
+.image-text-hidden3 .text,
+.image-text-hidden4 .text,
+.image-text-hidden5 .text {
+    margin-left: 10px;
+}
+.image-text-hidden .text p.n,
+.image-text-hidden2 .text p.n,
+.image-text-hidden3 .text p.n,
+.image-text-hidden4 .text p.n,
+.image-text-hidden5 .text p.n {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.image-text-hidden .text p.s,
+.image-text-hidden2 .text p.s,
+.image-text-hidden3 .text p.s,
+.image-text-hidden4 .text p.s,
+.image-text-hidden5 .text p.s {
+    margin: 0;
+    font-size: 15px;
+}
+ul.left_menu a.grade2{
+    color: yellow;
+    font-weight: bold;
+    font-size: 22px;
+}
+ul.left_menu a.grade3{
+    color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+}
+ul.left_menu a.grade4{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/*Send Email*/
+.border_box {
+    height: 100px;
+    text-align: center;
+    border: 1px #1D2123 solid;
+
+}
+.product_title {
+    color: #ea2222;
+    padding: 5px 0;
+    font-weight: bold;
+}
+.product_title a {
+    text-decoration: none;
+    color: #ea2222;
+    padding: 5px 0;
+    font-weight: bold;
+}
+.product_title a:hover {
+    color: #064E5A;
+}
+input.newsletter_input {
+    width: 160px;
+    height: 16px;
+    border: 1px #ddd9d9 solid;
+    margin: 10px 0 5px;
+    font-size: 12px;
+    padding: 3px;
+    color: #999999;
+}
+.lowcontent {
+    height: 100vh; /* 뷰포트의 높이만큼 사이드바 아래의 영역의 높이 설정 */
+    overflow-y: auto; /* 세로 스크롤이 내용이 넘칠 때만 표시되도록 */
+}
+
+
+
+
+
+/*-------------CENTER_음원------------------*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none; /* 초기에는 숨김 */
+}
+.result-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%; /* 화면의 오른쪽 절반에 위치 */
+    height: 100%;
+    background-color: white;
+    z-index: 101;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+}
+.result-container.show {
+    transform: translateX(0); /* 화면으로 이동하여 보이도록 설정 */
+}
+.result-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.album_title {
+    margin: 6px 20px 6px 310px;
+    padding: 3px 0px 3px 20px;
+    border-radius: 15px;
+    background-color: #1D2123;
+    position: relative;
+    width: auto;
+    text-align: right center;
+    color: greenyellow;
+    font-size: 20px;
+    font-weight: bold;
+}
+.album_boxsetting{
+    margin: 0 0 0 300px;
+}
+.album_card {
+    margin-left: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.4);
+}
+.album_cover {
+    border-radius: 15px;
+    top: 230px;
+    left: 230px;
+    width: 230px;
+    height: 230px;
+    display: inline-block;
+    margin: 10px 0 0 10px;
+    overflow: hidden;
+    transition: 0.5s ease-out;
+    filter: brightness(50%);
+}
+.album_cover img {
+    width: 100%;
+    height: auto;
+}
+.album_cover:hover {
+    filter: brightness(100%);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0,);
+}
+.album_cover img:hover{
+    transition: 0.5s ease-out;
+    transform: scale(1.4);
+}
+.details {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    padding: 1.5em 1.5em 2em;
+    background: #000a;
+    backdrop-filter: blur(10px) saturate(50%);
+    transition: 0.5s;
+    color: #fff;
+    z-index: 2;
+}
+.album_card:hover .details {
+    bottom: 0;
+}
+.details h1,
+.details h2 {
+    font-weight: 700;
+}
+.details h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+.details h2 {
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 10px;
+    opacity: 0.6;
+}
+.details .tags {
+    display: flex;
+    gap: .375em;
+    margin-bottom: .875em;
+    font-size: .85em;
+}
+.details .tags span {
+    padding: .35rem .65rem;
+    color: #fff;
+    border: 1.5px solid rgba(255 255 255 / 0.4);
+    border-radius: 4px;
+    border-radius: 50px;
+}
