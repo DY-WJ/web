@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Page</title>
 <style>
+    body a{
+        text-decoration: none;
+        color: black;
+    }
     div {
         text-align: center;
     }
@@ -74,6 +78,31 @@
         background-image: url("./src/img/background.jpg");
         background-size: cover
     }
+    #recommend_list {
+        text-align: center; 
+    }
+
+    .recommend_item {
+        display: inline-block; 
+        margin: 0 15px;
+    }
+
+    .recommend_item dl {
+        display: inline-block;
+        margin: 0px; 
+    }
+  
+    dl dd{
+        width: 100px;
+        margin-left:0;
+    }
+    dl dd p{
+        margin: 0 0 0 0px;
+    }
+    .recommend_item dl img {
+        width: 100px;
+        height: 100px;
+    }
 </style>
 </head>
 <body>
@@ -136,14 +165,61 @@
         </div>
         <div><br><br><br></div>
         <hr>
-        <div id="recommend_item">
-            
+        <div id="recommend_list">
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/9WAYTICKET.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>          
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/fromourMementoBox.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>  
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/Talk&Talk.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>  
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/MyLittleSociety.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>  
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/9WAYTICKET.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>  
         </div>
         <hr>
-
         <div class="item_detail">
             <img src ="./src/img/item_detail.jpg">
-        </div>
     </div>
     
 </body>
