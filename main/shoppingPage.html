@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link rel="stylesheet" href="shoppingPage.css">
+</head>
+<body>
+    <div class="head_top" >
+        <div style="text-align: right; width: 70%;">
+            <button><a href="">HOT 100</a></button>
+            <button><a href="">POP 100</a></button>
+            <button><a href="">발라드 100</a></button>
+            <button><a href="">힙합 100</a></button>
+            <button><a href="">R&B 100</a></button>
+            <button><a href="">동요 100</a></button>
+        </div>
+        <div style="text-align: right; width: 30%;">
+            이름 님
+            <button><a href="마이페이지 링크"></a>마이페이지</button>
+            <button><a href="장바구니 링크"></a>장바구니</button>
+        </div>
+    </div>
+    <div id="head">
+        <h2><a href="홈 URL"><img src="이미지 소스.jpg">000MUSIC</a> </h2>
+        <div class="search_bar">
+            <input type="search" placeholder="음원 제목, 가수 등을 검색하세요!">
+            <button class="SButton"></button>
+        </div>
+    </div>
+    <hr>
+
+    <div class="main_container">
+        <div class="item_title">
+            <ul style="list-style: none; text-align: left; margin-left:38%;">
+                <li><span style="font-size : 20px;"><strong>작자미상 - 전래동요 메들리</span>- 구성 등 상세 내용 </li>
+                <li>가수  제작사  발매일    원제: Title</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="item_info">
+            <div>
+                <img src="./src/img/magnifier.png" style="width: 300px; height:300px;">
+            </div>
+            <div>
+                <ul style="list-style: none;" >
+                    <li><div>판매가</div><div>1,000,000원</div></li>
+                    <li><div>할인가</div><div>900,000원</div></li>
+                    <li><div>쿠폰 할인</div><div><a href="https://www.naver.com">쿠폰 적용하기</a></div></li>
+                    <li><div>배송료</div><div>무료</div></li>
+                    <li><div>수령예상일</div><div>기준 주소</div></li>
+                    <li><div></div><div>도착 예정일</div></li>
+                    <li> <!-- + - 버튼 말고 그낭 number로도 변경 가능  -->
+                        <div>수량</div>
+                        <div style="position: relative;">
+                            <button id="change_item_count">-</button>
+                            <input type="number" style="width: 50px; height: 30px; text-align: center;" value="1"  name="item_count">
+                            <button id="change_item_count">+</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div><button style="width: 180px; height: 50px;"><a href="장바구니 링크">장바구니</a></button></div>
+                        <div><button style="width: 180px; height: 50px;"><a href="바로구매 링크">바로구매</a></button></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div><br><br><br></div>
+        <hr>
+        <div style="width: 50%;">
+            <h3>이것들은 어떄요?</h3>
+        </div>
+        <div id="recommend_list">
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/9WAYTICKET.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>          
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/fromourMementoBox.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>  
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/Talk&Talk.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>  
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/MyLittleSociety.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>  
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/9WAYTICKET.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>  
+        </div>
+        <hr>
+        <div class="item_detail">
+            <img src ="./src/img/item_detail.jpg">
+    </div>
+    
+</body>
+</html>
