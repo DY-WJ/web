@@ -4,8 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
+    <style>
+        h1 {
+            margin-left: 30px;
+        }
+        li {
+            text-decoration: none;
+            list-style: none;
+        }
+        td img{
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
-    
+<!-- 사이트 공통 헤드 -->
+<div><h1>주문결제</h1></div>
+<div id="payment_container">
+    <div id="address">
+        <table>
+            <tr>
+                <td>배송지 선택</td>
+                <td>
+                    <input type="text" name="address_list" list="address_data" placeholder="배송지를 선택해주세요">
+                    <datalist id="address_data">
+                        <option value="최근배송지">최근배송지</option>
+                        <option value="집">집</option>
+                        <option value="직장">직장</option>
+                        <option value="학교">학교</option>
+                    </datalist>
+                    <button id="add_address"> +</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td>홍길동</td>
+            </tr>
+            <tr>
+                <td>연락처</td>
+                <td>010-0000-0000</td>
+            </tr>
+            <tr>
+                <td>주소</td>
+                <td>리스너 구현이 아직 잘....</td>
+            </tr>
+            <tr>
+                <td>배송 요청사항</td>
+                <td>
+                    <input type="text" name="delivery_list" list="delivery_data" value="문앞에 놓아주세요">
+                    <datalist id="delivery_data">
+                        <option value="door">문앞에 놓아주세요</option>
+                        <option value="security">부재시 경비실에 맡겨주세요</option>
+                        <option value="contact">부재시 연락주세요</option>
+                        <option value="postbox">택배함에 놓아주세요</option>
+                    </datalist>
+                    <button id="add_address"> +</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="item">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">상품</th>
+                <th>수량</th>
+                <th>가격</th>
+                <th>할인금액</th>
+                <th>배송비</th>
+                <th>주문총액</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="src/img/search_icon.jpg"></td>
+                <td>상품명<br>상품 옵션</td>
+                <td>1</td>
+                <td>100000</td>
+                <td>50000</td>
+                <td>5000</td>
+                <td>55000</td>
+              </tr>
+              <tr>
+                <td colspan="4" rowspan="5"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>가격</td>
+                <td></td>
+                <td>100,000 원</td>
+              </tr>
+              <tr>
+                <td>할인금액</td>
+                <td></td>
+                <td>-50,000 원</td>
+              </tr>
+              <tr>
+                <td>배송비</td>
+                <td></td>
+                <td>5,000 원</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>55,000 원</td>
+              </tr>
+            </tbody>
+            </table>
+    </div>
+
+    <div id="payment">
+        <table>
+            <tr>
+                <td>결제방법</td>
+                <td>
+                    <input type="radio" name="payment_radio" value="card">신용카드
+                    <input type="radio" name="payment_radio" value="bank_transfer">무통장입금
+                    <input type="radio" name="payment_radio" value="account_transfer">실시간계좌이체
+                    <br>
+                    <input type="radio" name="payment_radio" value="naver_pay">NAVER Pay
+                    <input type="radio" name="payment_radio" value="kakao_pay">kakao Pay
+                    <input type="radio" name="payment_radio" value="samsung_pay">SAMSUNG Pay
+                    <input type="radio" name="payment_radio" value="toss_pay">toss pay
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="agreement_checkbox">
+        약관동의
+        <ul>
+            <input type="checkbox" name="agreement_checkbox">개인정보 3자 제공에 동의합니다<br>
+            <input type="checkbox" name="agreement_checkbox">결제대행서비스 이용약관에 동의 합니다.<br>
+            <input type="checkbox" name="agreement_checkbox">제품의 사용조건과 자사의 취소,환불규정에 동의합니다.<br>
+        </ul>
+    </div>
+</div>
 </body>
 </html>

@@ -1,109 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Page</title>
-<style>
-    body a{
-        text-decoration: none;
-        color: black;
-    }
-    div {
-        text-align: center;
-    }
-    input[type=search] {
-        width: 70%; 
-        height: 50px;
-        padding: 12px 20px; 
-        box-sizing: border-box; 
-        border-radius: 30px; 
-        font-size: 16px; 
-        margin-right: -80px; 
-    }
-
-    .SButton {
-        height: 40px;
-        padding: 13px 20px;
-        border-style: none;
-        cursor: pointer;
-        background-color: white;
-        background-image: url('./src/img/magnifier.png');
-        background-size: contain;
-    }
-    .contents_container {
-    text-align: center;}
-
-    .child {
-    display: inline-block;
-    }
-    .item_info{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-    .item_title{
-        margin-left: -40%;
-    }
-    .item_info ul li {
-        display: flex;
-        align-items: center;
-        margin: 30px;
-    }
-    .item_info ul li div{
-        width: 200px;
-        text-align: left;
-    }
-    #change_item_count{
-        text-align: center;
-        height: 35px;
-        width: 30px;
-    }
-    .head_top {
-        background-color: aqua; display: flex; 
-        justify-content: space-between;
-    }
-    .head_top button{
-        width: 90px;
-        height: 30px;
-        margin: 0%;
-        border-style: none;
-        background-color: aqua;
-        flex-wrap: nowrap;
-    }
-    a {
-        text-decoration: none;
-    }
-    body{
-        background-image: url("./src/img/background.jpg");
-        background-size: cover
-    }
-    #recommend_list {
-        text-align: center; 
-    }
-
-    .recommend_item {
-        display: inline-block; 
-        margin: 0 15px;
-    }
-
-    .recommend_item dl {
-        display: inline-block;
-        margin: 0px; 
-    }
-  
-    dl dd{
-        width: 100px;
-        margin-left:0;
-    }
-    dl dd p{
-        margin: 0 0 0 0px;
-    }
-    .recommend_item dl img {
-        width: 100px;
-        height: 100px;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link rel="stylesheet" href="shoppingPage.css">
 </head>
 <body>
     <div class="head_top" >
@@ -115,7 +16,7 @@
             <button><a href="">R&B 100</a></button>
             <button><a href="">동요 100</a></button>
         </div>
-        <div style="text-align: right; width: 20%;">
+        <div style="text-align: right; width: 30%;">
             이름 님
             <button><a href="마이페이지 링크"></a>마이페이지</button>
             <button><a href="장바구니 링크"></a>장바구니</button>
@@ -139,7 +40,9 @@
         </div>
         <hr>
         <div class="item_info">
-            <img src="./src/img/magnifier.png" style="width: 300px; height:300px;">
+            <div>
+                <img src="./src/img/magnifier.png" style="width: 300px; height:300px;">
+            </div>
             <div>
                 <ul style="list-style: none;" >
                     <li><div>판매가</div><div>1,000,000원</div></li>
@@ -165,6 +68,9 @@
         </div>
         <div><br><br><br></div>
         <hr>
+        <div style="width: 50%;">
+            <h3>이것들은 어떄요?</h3>
+        </div>
         <div id="recommend_list">
             <div class="recommend_item">
                 <dl>
