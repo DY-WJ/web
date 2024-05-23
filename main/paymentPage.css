@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin-left: 30px;
+    color: #333;
+}
+#payment_container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f9f9f9;
+}
+td img {
+    width: 100px;
+}
+input[type="text"], input[list] {
+    width: calc(90% - 50px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#item th, #item td {
+    text-align: center;
+}
+.amount {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.amount span {
+    margin-left: 5px;
+}
+#payment td {
+    padding: 10px 0;
+}
+#agreement_checkbox h2 {
+    margin: 20px 0 10px;
+}
+#agreement_checkbox ul {
+    list-style: none;
+    padding: 0;
+}
+#agreement_checkbox li {
+    margin-bottom: 10px;
+}
+#input_value {
+    width: calc(30% - 50px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
