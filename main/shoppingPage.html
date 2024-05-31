@@ -3,113 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            width: 300px;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #218838;
-        }
-
-        #message {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 16px;
-            color: green;
-        }
-    </style>
+    <title>Page</title>
+    <link rel="stylesheet" href="shoppingPage.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Payment Page</h1>
-        <form id="paymentForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" required>
-            
-            <label for="cardNumber">Card Number:</label>
-            <input type="text" id="cardNumber" name="cardNumber" required>
-            
-            <label for="expiry">Expiry Date:</label>
-            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
-            
-            <label for="cvv">CVV:</label>
-            <input type="text" id="cvv" name="cvv" required>
-            
-            <button type="submit">Pay Now</button>
-        </form>
-        <div id="message"></div>
+    <div class="head_top" >
+        <div style="text-align: right; width: 70%;">
+            <button><a href="">HOT 100</a></button>
+            <button><a href="">POP 100</a></button>
+            <button><a href="">발라드 100</a></button>
+            <button><a href="">힙합 100</a></button>
+            <button><a href="">R&B 100</a></button>
+            <button><a href="">동요 100</a></button>
+        </div>
+        <div style="text-align: right; width: 30%;">
+            이름 님
+            <button><a href="마이페이지 링크"></a>마이페이지</button>
+            <button><a href="장바구니 링크"></a>장바구니</button>
+        </div>
+    </div>
+    <div id="head">
+        <h2><a href="홈 URL"><img src="이미지 소스.jpg">000MUSIC</a> </h2>
+        <div class="search_bar">
+            <input type="search" placeholder="음원 제목, 가수 등을 검색하세요!">
+            <button class="SButton"></button>
+        </div>
+    </div>
+    <hr>
+
+    <div class="main_container">
+        <div class="item_title">
+            <ul style="list-style: none; text-align: left; margin-left:38%;">
+                <li><span style="font-size : 20px;"><strong>작자미상 - 전래동요 메들리</span>- 구성 등 상세 내용 </li>
+                <li>가수  제작사  발매일    원제: Title</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="item_info">
+            <div>
+                <img src="./src/img/magnifier.png" style="width: 300px; height:300px;">
+            </div>
+            <div>
+                <ul style="list-style: none;" >
+                    <li><div>판매가</div><div>1,000,000원</div></li>
+                    <li><div>할인가</div><div>900,000원</div></li>
+                    <li><div>쿠폰 할인</div><div><a href="https://www.naver.com">쿠폰 적용하기</a></div></li>
+                    <li><div>배송료</div><div>무료</div></li>
+                    <li><div>수령예상일</div><div>기준 주소</div></li>
+                    <li><div></div><div>도착 예정일</div></li>
+                    <li> <!-- + - 버튼 말고 그냥 number로도 변경 가능  -->
+                        <div>수량</div>
+                        <div style="position: relative;">
+                            <button onclick="changeItemCount(-1)">-</button>
+                            <input type="number" id="item_count" style="width: 50px; height: 30px; text-align: center;" value="1" name="item_count" onchange="updateTotalAmount(this.value)">
+                            <button onclick="changeItemCount(1)">+</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>총금액</div><div><span id="total_amount">900,000</span>원</div>
+                    </li>
+                    <li>
+                        <div><button style="width: 180px; height: 50px;"><a href="장바구니 링크">장바구니</a></button></div>
+                        <div><button style="width: 180px; height: 50px;"><a href="바로구매 링크">바로구매</a></button></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div><br><br><br></div>
+        <hr>
+        <div style="width: 50%;">
+            <h3>이것들은 어떄요?</h3>
+        </div>
+        <div id="recommend_list">
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/9WAYTICKET.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>          
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/fromourMementoBox.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>  
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/Talk&Talk.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>  
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/MyLittleSociety.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>  
+            <div class="recommend_item">
+                <dl>
+                    <dt>
+                        <a href="링크"><img src="./src/img/9WAYTICKET.webp" alt="9WAYTICKET"></a>
+                    </dt>
+                    <dd>
+                        <a href="링크"><p>fromis9 9WAYTICKET</p></a>
+                    </dd>
+                </dl>
+            </div>  
+        </div>
+        <hr>
+        <div class="item_detail">
+            <img src ="./src/img/item_detail.jpg">
+        </div>
     </div>
     <script>
-        document.getElementById('paymentForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            // Here you would typically send the data to your server
-            // For this example, we'll just display a message
+        function changeItemCount(change) {
+            var inputElement = document.getElementById('item_count');
+            var currentCount = parseInt(inputElement.value);
+            var newCount = currentCount + change;
+            if (newCount < 1) newCount = 1;
+            inputElement.value = newCount;
+            updateTotalAmount(newCount);
+        }
 
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const address = document.getElementById('address').value;
-            const cardNumber = document.getElementById('cardNumber').value;
-            const expiry = document.getElementById('expiry').value;
-            const cvv = document.getElementById('cvv').value;
+        function updateTotalAmount(count) {
+            var discountPrice = 900000;
+            var totalAmount = count * discountPrice;
+            document.getElementById('total_amount').innerText = totalAmount.toLocaleString();
+        }
 
-            if (name && email && address && cardNumber && expiry && cvv) {
-                document.getElementById('message').innerText = 'Payment Successful!';
-            } else {
-                document.getElementById('message').innerText = 'Please fill out all fields.';
-            }
-        });
+
+        window.onload = function() {
+            updateTotalAmount(parseInt(document.getElementById('item_count').value));
+        }
     </script>
 </body>
 </html>
