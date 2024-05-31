@@ -97,3 +97,6 @@ dl dd p{
     width: 100px;
     height: 100px;
 }
+select{
+    height: 30px;
+}

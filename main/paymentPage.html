@@ -11,37 +11,18 @@
     <div id="payment_container">
         <div id="address">
             <table>
-            <!-- 
-                <tr>
-                    <td>배송지 선택</td>
-                    <td>
-                        <input id="address_input" type="text" name="address_list" list="address_data" placeholder="배송지를 선택해주세요">
-                        <datalist id="address_data">
-                            <option value="최근배송지" name_value="홍길동" contact_num="010-0000-1234" address_value="동양미래대" delivery_request="문앞에 놓아주세요"></option>
-                            <option value="집" name_value="김철수" contact_num="010-1234-5678" address_value="서울특별시 강남구 삼성동" delivery_request="부재시 경비실에 맡겨주세요"></option>
-                            <option value="직장" name_value="이영희" contact_num="010-9876-5432" address_value="서울특별시 종로구 종로1가" delivery_request="부재시 연락주세요"></option>
-                            <option value="학교" name_value="박영수" contact_num="010-2468-1357" address_value="서울특별시 마포구 서교동" delivery_request="택배함에 놓아주세요"></option>
-                        </datalist>
-                        <button id="add_address">+</button>
-                    </td>
-                </tr>
-                <tr><td>이름</td><td id="name">홍길동</td></tr>
-                <tr><td>연락처</td><td id="contact">010-0000-0000</td></tr>
-                <tr><td>주소</td><td id="address">서울특별시 구로구 고척동</td></tr>
-            -->
-            <tr><td>이름</td><td id="name"><input type="text" id="input_value"></td></tr>
-            <tr><td>연락처</td><td id="contact"><input type="tel" id="input_value"></td></tr>
-            <tr><td>주소</td><td id="address"><input type="text"></td></tr>
+                <tr><td>이름</td><td id="name"><input type="text" id="input_value"></td></tr>
+                <tr><td>연락처</td><td id="contact"><input type="tel" id="input_value"></td></tr>
+                <tr><td>주소</td><td id="address"><input type="text"></td></tr>
                 <tr>
                     <td>배송 요청사항</td>
                     <td>
-                        <input id="delivery_request_input" type="text" name="delivery_list" list="delivery_data" value="문앞에 놓아주세요">
-                        <datalist id="delivery_data">
+                        <select id="delivery_data">
                             <option value="문앞에 놓아주세요">문앞에 놓아주세요</option>
                             <option value="부재시 경비실에 맡겨주세요">부재시 경비실에 맡겨주세요</option>
                             <option value="부재시 연락주세요">부재시 연락주세요</option>
                             <option value="택배함에 놓아주세요">택배함에 놓아주세요</option>
-                        </datalist>
+                        </select>
                         <button id="add_delivery_request">+</button>
                     </td>
                 </tr>
@@ -109,6 +90,27 @@
                 <li><label><input type="checkbox" name="agreement_checkbox">제품의 사용조건과 자사의 취소,환불규정에 동의합니다.</label></li>
             </ul>
         </div>
+        <div id="pay">
+            <button id="pay_button" onclick="checkAgreements()">결제하기</button>
+        </div>
     </div>
+
+    <script>
+        function checkAgreements() {
+            var checkboxes = document.getElementsByName('agreement_checkbox');
+            var allChecked = true;
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (!checkboxes[i].checked) {
+                    allChecked = false;
+                    break;
+                }
+            }
+            if (!allChecked) {
+                alert("약관에 모두 동의 해주세요");
+            } else {
+                window.location.href = "결제완료 페이지";
+            }
+        }
+    </script>
 </body>
 </html>

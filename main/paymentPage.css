@@ -80,3 +80,17 @@ button:hover {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+#delivery_data{
+    width: calc(30% - 50px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#pay{
+    text-align: right;
+}
+#pay_button{
+    width: 300px;
+    height:80px
+    
+}
