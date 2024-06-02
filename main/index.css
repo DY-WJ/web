@@ -44,7 +44,7 @@ body {
     left: 0;
     background-color: #111;
     background: transparent;
-    backdrop-filter: blur(40px);
+    backdrop-filter: blur(20px);
     overflow-x: auto;
     transition: 0.5s;
     padding-top: 60px;
@@ -132,7 +132,7 @@ header h1 {
 /*--테마--*/
 .theme {
     float: left;
-    width: 250px;
+    width: 220px;
     margin: 12px auto;
 }
 .them_text {
@@ -147,7 +147,7 @@ a.them {
 }
 .them img{
     filter: #ffffff;
-    border: white solid 1px;
+    width: 20px;
 }
 
 /*--검색바--*/
@@ -202,12 +202,12 @@ a.them {
 /*-------------------- 메뉴바 --------------------*/
 #menu_tab {
     width: auto;
-    height: 50px;
+    height: 70px;
     background-color: #fff;
 }
 ul.menu {
-    display: block;
     width: 100%;
+    height: 70px;
     margin: 0;
     padding: 0;
     background-color: #1D2123;
@@ -221,73 +221,56 @@ ul.menu li {
     display: inline;
     font-size: 15px;
     font-weight: bold;
-    line-height: 50px;
-    margin: auto 20px;
+    padding: 20px;
+    padding-right: 100px;
+    width: auto;
+}
+
+ul.menu li:hover{
+    background-color: yellowgreen;
+    border-radius: 25PX;
+    color: black;
+}
+
+ul.menu li img{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
 }
 a.nav1:link,
 a.nav1:visited {
-    display: flex;
     justify-content: center;
-    padding: 0 8px 0 22px;
-    margin: 0 14px;
-    height: 50px;
     text-decoration: none;
-    background: url("/src/img/house-door-fill.svg") no-repeat left;
     color: #FFFFFF;
 }
 a.nav2:link,
 a.nav2:visited {
-    display: flex;
     justify-content: center;
-    padding: 0 8px 0 22px;
-    margin: 0 14px;
-    height: 50px;
     text-decoration: none;
-    background: url("/src/img/house-door-fill.svg") no-repeat left;
     color: #FFFFFF;
 }
 a.nav3:link,
 a.nav3:visited {
-    display: flex;
     justify-content: center;
-    padding: 0 8px 0 22px;
-    margin: 0 14px;
-    height: 50px;
     text-decoration: none;
-    background: url("/src/img/house-door-fill.svg") no-repeat left;
     color: #FFFFFF;
 }
 a.nav4:link,
 a.nav4:visited {
-    display: flex;
     justify-content: center;
-    padding: 0 8px 0 22px;
-    margin: 0 14px;
-    height: 50px;
     text-decoration: none;
-    background: url("/src/img/house-door-fill.svg") no-repeat left;
     color: #FFFFFF;
 }
 a.nav5:link,
 a.nav5:visited {
-    display: flex;
     justify-content: center;
-    padding: 0 8px 0 22px;
-    margin: 0 14px;
-    height: 50px;
     text-decoration: none;
-    background: url("/src/img/house-door-fill.svg") no-repeat left;
     color: #FFFFFF;
 }
 a.nav6:link,
 a.nav6:visited {
-    display: flex;
     justify-content: center;
-    padding: 0 8px 0 22px;
-    margin: 0 14px;
-    height: 50px;
     text-decoration: none;
-    background: url("/src/img/house-door-fill.svg") no-repeat left;
     color: #FFFFFF;
 }
 a.nav1:hover,
@@ -296,12 +279,19 @@ a.nav3:hover,
 a.nav4:hover,
 a.nav5:hover,
 a.nav6:hover {
-    color: yellowgreen;
+    color: black;
 }
 li.currencies {
-    width: 180px;
+    width: auto;
     padding: 0 0 0 15px;
     color: white;
+    vertical-align: middle;
+
+}
+
+li.currencies select{
+    margin-left: 20px;
+    margin-top: -5px;
 }
 
 
@@ -316,26 +306,28 @@ li.currencies {
     overflow-y: auto;
 }
 .title_box {
-    height: 30px;
+    height: 60px;
     margin: 5px 0 0 0;
     padding: 7px 0 7px 0;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #1D2123;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     color: yellowgreen;
-    line-height: 30px;
+    line-height: 60px;
 }
 ul.left_menu {
     padding: 0;
     margin: 0;
     list-style: none;
+    text-decoration: none !important;
     font-size: 14px;
     position: relative;
 }
 ul.left_menu li {
     margin: 0;
+    height: 60px;
     list-style: none;
 }
 ul.left_menu a{
@@ -344,6 +336,7 @@ ul.left_menu a{
     padding: 0 15px; 
     line-height: 50px;
     font-size: 18px;
+    text-decoration: none !important;
 }
 ul.left_menu a.grade{
     color: yellow;
@@ -352,6 +345,7 @@ ul.left_menu a.grade{
 }
 ul.left_menu li.odd {
     height: 50px;
+    height: 55px;
     display: block;
     background-color: #242424b9;    
     background-position: 5px 5px;
@@ -490,38 +484,8 @@ ul.left_menu a.grade4{
 }
 
 
-/*Send Email*/
-.border_box {
-    height: 100px;
-    text-align: center;
-    border: 1px #1D2123 solid;
-
-}
-.product_title {
-    color: #ea2222;
-    padding: 5px 0;
-    font-weight: bold;
-}
-.product_title a {
-    text-decoration: none;
-    color: #ea2222;
-    padding: 5px 0;
-    font-weight: bold;
-}
-.product_title a:hover {
-    color: #064E5A;
-}
-input.newsletter_input {
-    width: 160px;
-    height: 16px;
-    border: 1px #ddd9d9 solid;
-    margin: 10px 0 5px;
-    font-size: 12px;
-    padding: 3px;
-    color: #999999;
-}
+/*--사이드바 아래 영역--*/
 .lowcontent {
-    height: 100vh; /* 뷰포트의 높이만큼 사이드바 아래의 영역의 높이 설정 */
     overflow-y: auto; /* 세로 스크롤이 내용이 넘칠 때만 표시되도록 */
 }
 
@@ -560,7 +524,7 @@ input.newsletter_input {
     border: none;
 }
 .album_title {
-    margin: 6px 20px 6px 310px;
+    margin: 6px 10px 10px 315px;
     padding: 3px 0px 3px 20px;
     border-radius: 15px;
     background-color: #1D2123;
@@ -572,7 +536,7 @@ input.newsletter_input {
     font-weight: bold;
 }
 .album_boxsetting{
-    margin: 0 0 0 300px;
+    margin: 0px 0 0 310px;
 }
 .album_card {
     margin-left: 8px;
@@ -651,4 +615,248 @@ input.newsletter_input {
     border: 1.5px solid rgba(255 255 255 / 0.4);
     border-radius: 4px;
     border-radius: 50px;
+}
+
+
+
+
+
+
+/*---- 인기 차트 ----*/
+div.clear{
+    clear: both;
+}
+.album_title2{
+    display: flex;
+    width: auto;
+    margin: 10px 10px 0px 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #1D2123;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: yellowgreen;
+    overflow: hidden;
+}
+.album_title2 p{
+    margin:20px;
+}
+
+div.genre{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.content_frame {
+    width: 100%;
+    overflow: hidden; /* content_frame에서 스크롤바 숨기기 */
+    padding: 20px;
+}
+
+.scroll_container {
+    display: flex; /* 수평 레이아웃을 위해 flexbox 사용 */
+    overflow-x: scroll; /* 수평 스크롤 활성화 */
+    -ms-overflow-style: none;  /* IE 및 Edge에서 스크롤바 숨기기 */
+    scrollbar-width: none;  /* Firefox에서 스크롤바 숨기기 */
+}
+
+.scroll_container::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera에서 스크롤바 숨기기 */
+}
+
+.content_box {
+    flex: 0 0 auto; /* 축소를 방지하고 래핑 허용 */
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+    transition: 0.5s ease-out;
+    transform: scale(1);
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 0 3px 15px rgba(255, 255, 255, 0.4);
+}
+
+
+.content_box:hover {
+    transform: scale(1.05);
+}
+
+.content_box img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.content_frame .title {
+    margin: 20px;
+    color: white;
+
+}
+
+.content_box .name {
+    font-family:'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+/*-----실시간 차트-----*/
+div.clear2{
+    clear: both;
+    padding: 0;
+}
+
+.chart_list li{
+    padding-top: 15px;
+    padding-left: 30px;
+    margin-left: -30px;
+    margin-right: 10px;
+    border-radius: 15px;
+    list-style: none;
+    counter-increment: list-counter;
+    background-color: #191919;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid black;
+}
+.chart_list li::before{
+    content: counter(list-counter) "위";
+}
+.chart_list li:hover{
+    color: yellowgreen;
+}
+
+
+
+a.chart_list_text_a{
+    display:inline-block;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 30px;
+    align-items: center;  
+}
+
+
+.chart_list_img{
+    width: 30px;
+    float: right;
+    margin: 7px 23px;
+}
+.hivelist{
+    background-color: #191919;
+    color: white;
+    display: none;
+}
+.hivelist:hover{
+    color: yellowgreen;
+    filter: brightness(150%);
+
+}
+
+.chart_list #li_1:hover #hli_1,
+.chart_list #li_2:hover #hli_2,
+.chart_list #li_3:hover #hli_3,
+.chart_list #li_4:hover #hli_4,
+.chart_list #li_5:hover #hli_5{
+    display: flex;
+    visibility: visible;
+    align-items: center;
+}
+
+.hivelist img{
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+    margin-left: 60px;
+    display: inline-block;
+}
+
+.hivetext{
+    display: inline-block;
+}
+
+
+/* 하단 섹션 스타일 */
+.footer {
+    width: auto;
+    background-color: #191919;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.footer .container {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer .container img{
+    width: 20px;
+}
+.footer .container .footer-column p{
+    margin-bottom: 10px;
+}
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.footer-column p,
+.footer-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+
+select{
+    width: 250px;
+    height: 40px;
+    padding: .8em .5em;
+    margin-bottom: 20px;
+    color: black;
+    font-family: inherit;
+    border: 1px solid #999; 
+    border-radius: 10px;
+}
+option{
+    background: white;
+    height: 50px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p a{
+    margin-left: 40px;
 }
