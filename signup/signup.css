@@ -1,0 +1,176 @@
+/*초기화*/
+body,h1,input,p{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*sign up*/
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrap {
+    color: black;
+    overflow: hidden;
+}
+
+.all-signup{
+    background-image: url(/src/img/bg_background.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin: 0  auto;
+    width: 800px;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid black;
+}
+.signup {
+    width: 50%;
+    float: right;
+    background-color:white;
+}
+.header{
+    font-size: 32px;
+    padding: 60px 60px 40px;
+    color: black;
+    text-align: center;
+}
+
+.inputlist {
+    padding: 60px;
+    padding-top: 0;
+}
+
+.inputbox {
+    height: 30px;
+    width: 80%;
+    background-color: transparent;
+    border-bottom: 3px solid white;
+}
+
+.inputlist input {
+    margin-bottom: 20px;
+    font-family: 'MaruBuri-Regular';
+    width: 100%;
+    border: 1px solid black;
+}
+
+input::placeholder{
+    color: black;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.signupbtn{
+    margin: 0 auto;
+    height: 50px;
+    width: 150px;
+    background-color: #32508e;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.signupbtn:hover {
+    border: 3px solid #2178ff;
+    background-color: white;
+    color: #2178ff;
+    box-sizing: border-box;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 150px;
+    background-color: #32508e;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;;
+}
+
+#submit:hover {
+    border: 3px solid blue;
+    background-color: white;
+    color: blue;
+}
+
+input::placeholder {color:black;}
+
+.inputlist input[type=radio] {
+    width: 50px;
+    height: 18px;
+
+}
+
+.inputlist p{
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+/*sns_signup*/
+
+.sns_signup {
+    width: 50%;
+    float: right;
+}
+
+.sns_header {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+}
+
+.signup-terms {
+    margin-top: 20px;
+    text-align: center;
+
+}
+.terms-p {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.checkwrap {
+    text-align: center;
+    margin-top: 15px;
+}
+#text {
+    font-size: 14px;
+}
+
+.check {
+    color: white;
+    display: inline;
+}
+#checkbox{
+    display: inline-block;
+    width: 40px;
+    height: 18px;
+}
