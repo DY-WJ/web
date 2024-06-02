@@ -1,0 +1,13 @@
+.video_side{
+    text-align: center;
+}
+.video_side video{
+    width: 90vw;
+    height: 40vh;
+}
+.video_side h2{
+    color: yellowgreen;
+}
+.video_side p{
+    color: #484848;
+}
