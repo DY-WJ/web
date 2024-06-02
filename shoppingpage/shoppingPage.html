@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page</title>
+        <link rel="stylesheet" href="shoppingPage.css">
+    </head>
+    <body>
+        <div class="head_top">
+            <div class="title">
+                <button>
+                    <a href="/main/index.html">HOME</a>
+                </button>
+                <button>
+                    <a href="">POP 100</a>
+                </button>
+                <button>
+                    <a href="">발라드 100</a>
+                </button>
+                <button>
+                    <a href="">힙합 100</a>
+                </button>
+                <button>
+                    <a href="">R&B 100</a>
+                </button>
+                <button>
+                    <a href="">동요 100</a>
+                </button>
+            </div>
+
+            <div>
+                미래대 님
+                <button>
+                    <a href="마이페이지 링크"></a>마이페이지</button>
+                <button>
+                    <a href="shoppingPage.html"></a>장바구니</button>
+            </div>
+        </div>
+
+        <div class="top_back"></div>
+
+        <div id="head">
+            <h2>
+                <a href="/main/index.html"><img src="">000MUSIC</a>
+            </h2>
+            <div class="search_bar">
+                <input type="search" placeholder="음원 제목, 가수 등을 검색하세요!">
+                <button class="SButton"></button>
+            </div>
+        </div>
+        <hr>
+
+        <div class="main_container">
+            <div class="item_title">
+                <ul style="list-style: none; text-align: left; margin-left:38%;">
+                    <li>
+                        <span>
+                            <strong>작자미상 - 전래동요 메들리</strong>
+                        </span>- 구성 등 상세 내용
+                    </li>
+                    <li>가수 제작사 발매일 원제: Title</li>
+                </ul>
+            </div>
+            <hr>
+
+
+            <div class="item_info">
+                <div>
+                    <img src="/src/img/newjeans01.gif">
+                </div>
+                <div>
+                    <ul style="list-style: none;">
+                        <li>
+                            <div><strong>판매가</strong></div>
+                            <div>1,000,000원</div>
+                        </li>
+
+                        <li>
+                            <div><strong>할인가</strong></div>
+                            <div>900,000원</div>
+                        </li>
+
+                        <li>
+                            <div><strong>쿠폰 할인</strong></div>
+                            <div>
+                                <select name="coupon" id="coupon" onchange="updateTotalAmount()">
+                                    <option value="0">쿠폰을 선택하세요</option>
+                                    <option value="20">첫구매 20% 할인쿠폰</option>
+                                    <option value="10">생일 축하 10% 할인쿠폰</option>
+                                    <option value="5">룰렛 5% 할인 쿠폰</option>
+                                </select>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div><strong>배송료</strong></div>
+                            <div>무료</div>
+                        </li>
+
+                        <li>
+                            <div><strong>수령예상일</strong></div>
+                            <div>기준 주소</div>
+                        </li>
+                    
+                        <li>
+                            <div><strong>수량</strong></div>
+                            <div style="position: relative;">
+                                <button onclick="changeItemCount(-1)">-</button>
+                                <input type="number" id="item_count" value="1" name="item_count" onchange="updateTotalAmount()">
+                                <button onclick="changeItemCount(1)">+</button>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div><strong>총금액</strong></div>
+                            <div>
+                                <span id="total_amount">900,000</span>원</div>
+                        </li>
+
+                        <li>
+                            <div>
+                                <button class="sell-button">
+                                    <a href="장바구니 링크">장바구니</a>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="sell-button">
+                                    <a href="/payment/paymentPage.html">바로구매</a>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <hr>
+            <div class="h3-title">
+                <h3>이것들은 어떄요?</h3>
+            </div>
+            <div id="recommend_list">
+                <div class="recommend_item">
+                    <dl>
+                        <dt>
+                            <a href="링크"><img src="/src/img/ph_fromis01.webp" alt="9WAYTICKET"></a>
+                        </dt>
+                        <dd>
+                            <a href="링크">
+                                <p>fromis9 9WAYTICKET</p>
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="recommend_item">
+                    <dl>
+                        <dt>
+                            <a href="링크"><img src="/src/img/ph_fromis02.webp" alt="9WAYTICKET"></a>
+                        </dt>
+                        <dd>
+                            <a href="링크">
+                                <p>fromis9 9WAYTICKET</p>
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="recommend_item">
+                    <dl>
+                        <dt>
+                            <a href="링크"><img src="/src/img/ph_fromis03.webp" alt="9WAYTICKET"></a>
+                        </dt>
+                        <dd>
+                            <a href="링크">
+                                <p>fromis9 9WAYTICKET</p>
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="recommend_item">
+                    <dl>
+                        <dt>
+                            <a href="링크"><img src="/src/img/newjeans02.webp" alt="9WAYTICKET"></a>
+                        </dt>
+                        <dd>
+                            <a href="링크">
+                                <p>fromis9 9WAYTICKET</p>
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="recommend_item">
+                    <dl>
+                        <dt>
+                            <a href="링크"><img src="/src/img/newjeans00.webp" alt="9WAYTICKET"></a>
+                        </dt>
+                        <dd>
+                            <a href="링크">
+                                <p>fromis9 9WAYTICKET</p>
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="recommend_item">
+                    <dl>
+                        <dt>
+                            <a href="링크"><img src="/src/img/newjeans08.jpg" alt="9WAYTICKET"></a>
+                        </dt>
+                        <dd>
+                            <a href="링크">
+                                <p>fromis9 9WAYTICKET</p>
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+
+            <hr>
+            <div class="pdf-container">
+                <iframe src="/src/file/file01.pdf" width="80%" height="100%"></iframe>
+            </div>
+        </div>
+        <script src="shoppingPage.js"></script>
+    </body>
+</html>

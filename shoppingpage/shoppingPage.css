@@ -1,0 +1,168 @@
+body{
+    background: whitesmoke;
+}
+
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+div {
+    text-align: center;
+}
+
+input[type=search] {
+    width: 70%;
+    height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-right: -80px;
+}
+
+.head_top{
+    color: white;
+    background-color: #1D2123;
+    border-radius: 15px;
+    height: 60px;
+    width: 99%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head_top button {
+    width: 100px;
+    height: 40px;
+    margin: 0;
+    border-style: none;
+    flex-wrap: nowrap;
+    background: #1D2123;
+    color: white;
+}
+
+.head_top button a {
+    color: white;
+}
+
+div.top_back{
+    width: 100%;
+    height: 90px;
+    background: whitesmoke;
+    display: fixed;
+}
+
+#head a{
+    font-size: 40px;
+}
+.tltle{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.SButton {
+    height: 40px;
+    padding: 13px 20px;
+    margin-bottom: 30px;
+    border-style: none;
+    cursor: pointer;
+    background-color: white;
+    background-image: url("/src/img/ic_search.png");
+    background-size: contain;
+}
+
+span{
+    font-size: 20px;
+}
+
+.item_info {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.item_info img {
+    width: 300px;
+    height: 300px;
+    margin: 100px;
+    border-radius: 15px;
+}
+
+.item_title {
+    margin-left: -40%;
+}
+
+.item_info ul li {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.item_info ul li div {
+    width: 200px;
+    text-align: left;
+}
+
+select {
+    height: 30px;
+}
+
+
+#item_count{
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+
+.sell-button{
+    width: 180px;
+    height: 50px;
+    background: #1D2123;
+    border-radius: 10px;
+}
+
+.sell-button a{
+    color: white;
+
+}
+
+.h3-title{
+    width: 50%;
+}
+
+
+
+
+#recommend_list {
+    text-align: center;
+    width: 100%;
+}
+
+.recommend_item {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.recommend_item dl {
+    display: inline-block;
+    margin: 0;
+}
+
+dl dd {
+    width: 100px;
+    margin-left: 0;
+}
+dl dd p {
+    margin: 0;
+}
+.recommend_item dl img {
+    width: 100px;
+    height: 100px;
+}
+
+.pdf-container{
+    height: 600px;
+}
