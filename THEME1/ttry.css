@@ -1,0 +1,458 @@
+/* 상단 바*/
+.upbar1 {
+    width: 100%;
+    background: transparent;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.upbar1 a {
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.upbar1 a:hover {
+    color: rgb(27, 41, 198);
+}
+
+.homeicon {
+    background: url("/src/img/house-door-fill.svg") no-repeat left;
+}
+
+.FOSSILMUSIC {
+
+    font-weight: 700;
+    color: red;
+
+}
+
+.upbar2 {
+    width: 100%;
+    background: transparent;
+    z-index: 1;
+    text-align: center;
+    margin-top: 3%;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.FOSSILMUSIC,
+.freejoin {
+    display: inline-block;
+}
+.FOSSILMUSIC {
+    float: left;
+    margin-left: 5%;
+    font-size: 150%;
+}
+.freejoin {
+    float: right;
+    margin-right: 5%;
+}
+.freejoin button {
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 180px;
+    height: 30px;
+}
+
+/*------------------ 중간 회색박스 레이아웃 -----------------------*/
+
+.midlayout {
+    position: absolute;
+    margin-top: 3%;
+    text-align: center;
+    background-color: lightgrey;
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.midlayout a {
+    text-decoration: none;
+}
+
+/*------------------------- 중간 새롭게 사운드 레이아웃--------------------- */
+.midlayout2 {
+    position: absolute;
+    margin-top: 5%;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    font-size: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.midlayout2 p {
+    font-weight: bold;
+}
+
+.title_P {
+    margin-top: 7%;
+    font-size: 25px;
+}
+
+.midlayout2 button {
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.newsound {
+    font-size: 75px;
+    font-weight: 900;
+}
+
+/* 사진 ㄱㄱ */
+.imgstation {
+    margin-top: 700px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgstation img {
+    width: 100px;
+    display: flex;
+    margin-right: 15px;
+}
+
+.imgcenter1,
+.imgcenter2,
+.imgcenter3 {
+    display: flex;
+    float: left;
+    margin: 40px;
+    align-items: center;
+    justify-content: center;
+
+}
+/* ----------------실시간 음원 차트------------------  */
+.fastchoose {
+    width: 90%;
+    background: transparent;
+    display: inline-block;
+    z-index: 1;
+    text-align: center;
+    margin: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: -2px;
+}
+
+.thismusic {
+    margin-bottom: -10%;
+    font-weight: bold;
+}
+
+.fastchose {
+    font-weight: 800;
+    font-size: 40px;
+    float: left;
+}
+
+.allplay button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    float: right;
+    margin-top: 70px;
+}
+
+.fastchose,
+.fastleft {
+    display: inline-block;
+}
+
+.fastleft {
+    float: left;
+    margin-bottom: -20%;
+}
+
+/* ------------ 빠른 선곡 리스트 -------------*/
+.allplaylist {
+    width: 90%;
+    margin-left: 5%;
+}
+.playlist1 {
+    margin: 5%;
+    width: 49%;
+    display: inline-block;
+    margin: 30px 3px 3px;
+}
+
+.playlist2 {
+    margin-top: 3px;
+    width: 49%;
+    float: right;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.music1 {
+    display: flex;
+    border: 2px solid black;
+    height: 70px;
+}
+
+.music1 img {
+    width: 70px;
+    height: 70px;
+}
+
+.music1 p {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 23px;
+
+}
+.music1 img,
+.music1p {
+    display: inline-block;
+}
+
+.music2 {
+    display: flex;
+    margin-top: 5px;
+    border: 2px solid black;
+    height: 70px;
+}
+
+.music2 img {
+    width: 70px;
+    height: 70px;
+}
+
+.music2 p {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 23px;
+
+}
+.music2 img,
+.music2p {
+    display: inline-block;
+}
+
+.music3 {
+    display: flex;
+    margin-top: 5px;
+    border: 2px solid black;
+    height: 70px;
+}
+
+.music3 img {
+    width: 70px;
+    height: 70px;
+}
+
+.music3 p {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 23px;
+
+}
+.music3 img,
+.music3p {
+    display: inline-block;
+}
+
+.music4 {
+    display: flex;
+    margin-top: 5px;
+    border: 2px solid black;
+    height: 70px;
+}
+
+.music4 img {
+    width: 70px;
+    height: 70px;
+}
+
+.music4 p {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 23px;
+
+}
+.music4 img,
+.music4p {
+    display: inline-block;
+}
+
+.music5 {
+    display: flex;
+    height: 70px;
+    border: 2px solid;
+
+}
+
+.music5 img {
+    width: 70px;
+    height: 70px;
+}
+
+.music5 p {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 23px;
+
+}
+.music5 img,
+.music5p {
+    display: inline-block;
+}
+
+.music6 {
+    display: flex;
+    height: 70px;
+    border: 2px solid;
+    margin-top: 5px;
+
+}
+
+.music6 img {
+    width: 70px;
+    height: 70px;
+}
+
+.music6 p {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 23px;
+
+}
+.music6 img,
+.music6p {
+    display: inline-block;
+}
+
+.music7 {
+    display: flex;
+    height: 70px;
+    border: 2px solid;
+    margin-top: 5px;
+
+}
+
+.music7 img {
+    width: 70px;
+    height: 70px;
+}
+
+.music7 p {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 23px;
+
+}
+.music7 img,
+.music7p {
+    display: inline-block;
+}
+
+.music8 {
+    display: flex;
+    height: 70px;
+    border: 2px solid;
+    margin-top: 5px;
+
+}
+
+.music8 img {
+    width: 70px;
+    height: 70px;
+}
+
+.music8 p {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 23px;
+
+}
+.music8 img,
+.music8p {
+    display: inline-block;
+}
+
+.playlist1,
+.playlist2 {
+    display: inline-block;
+}
+
+/* -----------    맞춤 뮤직비디오     ------------- */
+
+div.clear {
+    clear: both;
+}
+
+.freechoose {
+    width: 90%;
+    background: transparent;
+    display: inline-block;
+    z-index: 1;
+    text-align: center;
+    margin: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: -2px;
+}
+
+.freechose {
+    font-weight: 800;
+    font-size: 40px;
+    float: left;
+}
+
+.freechose,
+.freeleft {
+    display: inline-block;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.973);
+    color: white;
+    border-radius: 50px;
+}
+
+.free {
+    float: left;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.free_a{
+    font-size: 25px;
+    font-weight: 1000;
+    color: yellowgreen;
+}
+.etc4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
