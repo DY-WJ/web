@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fossile Music</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <!------------------------------ 상단 메뉴 바 ------------------------------>
+        <div class="navbar">
+            <a href="/main/index.html">
+                <h2>Fossile Music</h2>
+            </a>
+            <a href="#sidebar">
+                <button class="menubutton"><img src="/src/img/ic_list.png"></button>
+            </a>
+            <a href="/login/logins.html" id="login">로그인</a>
+            <a href="/signup/signup.html" id="signup">회원가입</a>
+
+            <!-----검색 바----->
+            <div class="search">
+                <input type="search" placeholder="search">
+                <img src="/src/img/search_icon2.png">
+            </div>
+
+            <!-- 밑에 작은 버튼들 (아마 카테고리 및 알고리즘 키워드로 쓸 예정)-->
+            <div class="navbar_option">
+                <span class="option">
+                    <a href="#">#힙합</a>
+                </span>
+                <span class="option">
+                    <a>#K-pop</a>
+                </span>
+                <span class="option">
+                    <a>#R&B</a>
+                </span>
+                <span class="option">
+                    <a>#인기곡</a>
+                </span>
+                <span class="option">
+                    <a>#우울</a>
+                </span>
+                <span class="option">
+                    <a>#신나는</a>
+                </span>
+                <span class="option">
+                    <a>#몽환</a>
+                </span>
+                <span class="option">
+                    <a>#운동</a>
+                </span>
+                <span class="option">
+                    <a>#출근</a>
+                </span>
+                <span class="option">
+                    <a>#퇴근</a>
+                </span>
+                <span class="option">
+                    <a>#올드스쿨</a>
+                </span>
+                <span class="option">
+                    <a>#노동요</a>
+                </span>
+                <span class="option">
+                    <a>#EDM</a>
+                </span>
+                <span class="option">
+                    <a>#밤</a>
+                </span>
+                <span class="option">
+                    <a>#아침</a>
+                </span>
+                <span class="option">
+                    <a>#설렘</a>
+                </span>
+                <span class="option">
+                    <a>#이별</a>
+                </span>
+                <span class="option">
+                    <a>#발라드</a>
+                </span>
+                <span class="option">
+                    <a>#DEAN</a>
+                </span>
+                <span class="option">
+                    <a>#뉴진스</a>
+                </span>
+                <span class="option">
+                    <a>#아일릿</a>
+                </span>
+                <span class="option">
+                    <a>#QM</a>
+                </span>
+                <span class="option">
+                    <a>#저스디스</a>
+                </span>
+                <span class="option">
+                    <a>#해외힙합</a>
+                </span>
+                <span class="option">
+                    <a>#팝송</a>
+                </span>
+                <span class="option">
+                    <a>#J-pop</a>
+                </span>
+            </div>
+        </div>
+        <!------------------------------ 상단 메뉴 바 ------------------------------>
+
+        <!------------------------------ 사이드 메뉴 바 ------------------------------>
+        <div class="sidebar" id="sidebar">
+            &nbsp;<a href="#">
+                <button>&times;</button>
+            </a>
+            <ul class="sidebar_list">
+                <br>
+
+                <a href="#">
+                    <li>
+                        <img src="resource/img/mypage.png" alt="mypage_icon">
+                        My page
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="resource/img/playlist_icon.png" alt="playlist_icon">
+                        Playlist
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <span id="fan_icon">★</span>
+                        Fan Artist
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="resource/img/history_icon.png" alt="history_icon">
+                        History
+                    </li>
+                </a>
+                <br>
+                <hr>
+                <br>
+
+                <!--------------------위로는 개인설정 밑에는 컨텐츠 추천? 느낌----------------------->
+
+                <a href="#AOM">
+                    <li>
+                        <img src="resource/img/app-indicator.svg" alt="pre_icon">
+                        A.O.M
+                    </li>
+                </a>
+                <a href="#recommend">
+                    <li>
+                        <img src="resource/img/app-indicator.svg" alt="pre_icon">Genre Recommend
+                    </li>
+                </a>
+                <a href="#chart">
+                    <li>
+                        <img src="resource/img/app-indicator.svg" alt="pre_icon">
+                        Ranking chart
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="resource/img/app-indicator.svg" alt="pre_icon">
+                        Song Recommend
+                    </li>
+                </a>
+            </ul>
+            <!--마지막 항목 숨겨짐 방지-->
+        </div>
+        <!------------------------------ 사이드 메뉴 바 ------------------------------>
+
+
+
+
+        <!-------------------------------- 뮤직 플레이어 ------------------------------->
+        <div class="player_frame" id="player">
+            <a href="#" class="play_close">
+                <button>&times;</button>
+            </a>
+            <iframe src="/theme02/player/player.html" name="player_i"></iframe>
+        </div>
+        <!-------------------------------- 뮤직 플레이어 ------------------------------->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+        <!------------------------------ 메인 페이지 ------------------------------>
+        <div class="main_page">
+            <div class="textbox">
+                <h1></h1>
+                <p></p>
+            </div>
+        </div>
+        <!------------------------------ 메인 페이지 ------------------------------>
+
+
+
+
+        <!-------------------- 중앙 컨텐츠 (이 달의 아티스트)------------------------>
+        <div class="content_frame" id="AOM">
+            <h3 class="title">Artist of this Month</h3>
+            <div class="content_box">
+                <a href="#player"><img src="/src/img/newjeans01.gif"></a>
+                <h3 class="name">Newjeans</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/bts02.jpg">
+                <h3 class="name">Aespa</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/newjeans00.webp">
+                <h3 class="name">DEAN</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/newjeans02.webp">
+                <h3 class="name">Jay park</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/music02.png">
+                <h3 class="name">aespa</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/music03.jpg">
+                <h3 class="name">Fromis_9</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/music05.JPG">
+                <h3 class="name">ILLIT</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/music04.jpg">
+                <h3 class="name">RM of BTS</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/music06.png">
+                <h3 class="name">IU</h3>
+            </div>
+        </div>
+        <!------------------ 중앙 컨텐츠 (이 달의 아티스트)-------------------->
+
+
+
+
+
+        <br>
+        <!------------------------------ 중앙 컨텐츠 (장르 추천) ------------------------------>
+        <div class="content_frame" id="recommend">
+            <h3 class="title">"힙합" 다음 장르를 좋아한다면?</h3>
+            <div class="content_box">
+                <img src="/src/img/music07.jpg">
+                <h3 class="name">Yanghongwon</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/music08.jpg">
+                <h3 class="name">SLOWMO</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/music09.jpg">
+                <h3 class="name">BTS</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/music10.png">
+                <h3 class="name">DEAN</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/music11.jpg">
+                <h3 class="name">Jay park</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/bts03.jpg">
+                <h3 class="name">2MH41K</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/bts04.jpg">
+                <h3 class="name">Illmatic</h3>
+            </div>
+            <div class="content_box">
+                <img src="/src/img/bts06.webp">
+                <h3 class="name">Playboi Carti</h3>
+            </div>
+        </div>
+        <!------------------------------ 중앙 컨텐츠 (장르 추천) ------------------------------>
+        <br>
+
+
+
+        <!------------------------------ 중앙 컨텐츠 (인기 차트) ------------------------------>
+        <div class="chart" id="chart">
+            <h3>인기 차트</h3>
+            <ol class="chart_list">
+                <li id="li_1">
+                    <a class="chart_list_text_a" href="#player">How sweet - newjeans</a>
+                    <img src="/src//img/app-indicator.svg" alt="장바구니" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="재생목록" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="즐겨찾기" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="재생" class="chart_list_img">
+                    <div class="hivelist" id="hli_1">
+                        <img src="/src/img/newjeans01.gif" alt="앨범커버">
+                        <div class="hivetext">
+                            <p>Album name - 'How sweet'</p>
+                            <p>Double Single</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li id="li_2">
+                    <a class="chart_list_text_a">die 4 you - DEAN</a>
+                    <img src="/src//img/app-indicator.svg" alt="장바구니" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="재생목록" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="즐겨찾기" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="재생" class="chart_list_img">
+                    <div class="hivelist" id="hli_2">
+                        <img src="/src/img/bts05.jpg" alt="앨범커버">
+                        <div class="hivetext">
+                            <p>Album name - 'die 4 you'</p>
+                            <p>Single Album</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li id="li_3">
+                    <a class="chart_list_text_a">근데 - 양홍원</a>
+                    <img src="/src//img/app-indicator.svg" alt="장바구니" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="재생목록" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="즐겨찾기" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="재생" class="chart_list_img">
+                    <div class="hivelist" id="hli_3">
+                        <img src="/src/img/music05.JPG" alt="앨범커버">
+                        <div class="hivetext">
+                            <p>Album name - 'SLOWMO'</p>
+                            <p>MIXTAPE</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li id="li_4">
+                    <a class="chart_list_text_a">Armageddon - aespa</a>
+                    <img src="/src//img/app-indicator.svg" alt="장바구니" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="재생목록" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="즐겨찾기" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="재생" class="chart_list_img">
+                    <div class="hivelist" id="hli_4">
+                        <img src="/src/img/bts06.webp" alt="앨범커버">
+                        <div class="hivetext">
+                            <p>Album name - 'Armageddon'</p>
+                            <p>aespa The 1st Album</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li id="li_5">
+                    <a class="chart_list_text_a">Super Shy - newjeans</a>
+                    <img src="/src//img/app-indicator.svg" alt="장바구니" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="재생목록" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="즐겨찾기" class="chart_list_img">
+                    <img src="/src//img/app-indicator.svg" alt="재생" class="chart_list_img">
+                    <div class="hivelist" id="hli_5">
+                        <img src="/src/img/music06.png" alt="앨범커버">
+                        <div class="hivetext">
+                            <p>Album name - 'Get up'</p>
+                            <p>newjeans 2nd EP</p>
+                        </div>
+
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <!------------------------------ 중앙 컨텐츠 (인기 차트) ------------------------------>
+        <br>
+        <br>
+
+
+
+
+        <!----------------- 중앙 컨텐츠 자주 듣는 음악 (혹은 음악 추천)--------------------->
+        <div class="music_list">
+            <h3>
+                <i>#Username</i>님의 취향 반영 플레이리스트</h3>
+            <!--i는 일부로, 사용자 이름 넣는 느낌으로 표현-->
+            <div class="music_box">
+                <img src="/src/img/bts06.webp" alt="앨범커버">
+                <div class="hivebox">
+                    <h4>
+                        <a>die 4 you</a>
+                    </h4>
+                    <span class="tag">
+                        <a>dean</a>
+                    </span>
+                    <span class="tag">
+                        <a>R&B</a>
+                    </span>
+                    <span class="tag">
+                        <a>싱글</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="music_box">
+                <img src="/src/img/music02.png" alt="앨범커버">
+                <div class="hivebox">
+                    <h4>
+                        <a>GOSLOW</a>
+                    </h4>
+                    <span class="tag">
+                        <a>양홍원</a>
+                    </span>
+                    <span class="tag">
+                        <a>emo</a>
+                    </span>
+                    <span class="tag">
+                        <a>SLOWMO</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="music_box">
+                <img src="/src/img/music08.jpg" alt="앨범커버">
+                <div class="hivebox">
+                    <h4>
+                        <a>How Sweet</a>
+                    </h4>
+                    <span class="tag">
+                        <a>newjeans</a>
+                    </span>
+                    <span class="tag">
+                        <a>K-Pop</a>
+                    </span>
+                    <span class="tag">
+                        <a>NEW</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="music_box">
+                <img src="/src/img/newjeans02.webp" alt="앨범커버">
+                <div class="hivebox">
+                    <h4>
+                        <a>개미굴</a>
+                    </h4>
+                    <span class="tag">
+                        <a>QM</a>
+                    </span>
+                    <span class="tag">
+                        <a>Hip-Hop</a>
+                    </span>
+                    <span class="tag">
+                        <a>개미</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="music_box">
+                <img src="/src/img/music06.png" alt="앨범커버">
+                <div class="hivebox">
+                    <h4>
+                        <a>newjeans</a>
+                    </h4>
+                    <span class="tag">
+                        <a>newjeans</a>
+                    </span>
+                    <span class="tag">
+                        <a>K-pop</a>
+                    </span>
+                    <span class="tag">
+                        <a>Top-Rated</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="music_box">
+                <img src="/src/img/bts08.webp" alt="앨범커버">
+                <div class="hivebox">
+                    <h4>
+                        <a>Hype boy</a>
+                    </h4>
+                    <span class="tag">
+                        <a>newjeans</a>
+                    </span>
+                    <span class="tag">
+                        <a>K-Pop</a>
+                    </span>
+                    <span class="tag">
+                        <a>Title</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="music_box">
+                <img src="/src/img/music05.JPG" alt="앨범커버">
+                <div class="hivebox">
+                    <h4>
+                        <a>노원 (No one)</a>
+                    </h4>
+                    <span class="tag">
+                        <a>Justhis</a>
+                    </span>
+                    <span class="tag">
+                        <a>Hip-Hop</a>
+                    </span>
+                    <span class="tag">
+                        <a>19</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="music_box">
+                <img src="/src/img/newjeans04.webp" alt="앨범커버">
+                <div class="hivebox">
+                    <h4>
+                        <a>목소리(melody)</a>
+                    </h4>
+                    <span class="tag">
+                        <a>aespa</a>
+                    </span>
+                    <span class="tag">
+                        <a>K-Pop</a>
+                    </span>
+                    <span class="tag">
+                        <a>설렘</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!------------------- 중앙 컨텐츠 자주 듣는 음악 (혹은 음악 추천)----------------->
+        <br>
+        <br>
+        <br>
+        <hr>
+        <!------------------------------ 웹 페이지 인포 ------------------------------>
+        <footer class="page_info">
+            <p>tel: 010-xxxx-xxxx , adress: xxx/xxx/ xxxxx-xxxx</p>
+            <p>(주) 화석</p>
+        </footer>
+        <!------------------------------ 웹 페이지 인포 ------------------------------>
+    </body>
+</html>

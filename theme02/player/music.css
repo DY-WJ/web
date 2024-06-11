@@ -1,0 +1,31 @@
+.music_body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.album{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.album_art{
+    display: inline-block;
+    margin-top: 5vh;
+    width: 200px;
+    height: 200px;
+}
+.music h2{
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+}
+.music p{
+    color: rgba(255, 255, 255, 0.842);
+    text-align: center;
+    font-size: 4vw;
+}
+.music audio{
+    margin-top: 20px;
+    width: 250px;
+    height: 5vh;
+}

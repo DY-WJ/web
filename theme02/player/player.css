@@ -1,0 +1,58 @@
+a{
+    text-decoration: none;
+}
+.main_player{
+    display: flex;
+    margin: 0;
+    height: 100%;
+    width: 600px;
+}
+.play_field{
+    align-items: center;
+    display: block;
+    width: 420px;
+    height: 100vh;
+    text-align: center;
+    margin: auto;
+    border-radius: 15px;
+    background-image: url(/src/img/smartphone.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.play_field h2{
+    color: yellowgreen;
+    margin-top: 120px;
+}
+/*----------버튼----------*/
+.to_music{
+    border: none;
+    background-color: yellowgreen;
+    border-radius: 15px 0px 0px 15px;
+    color: white;
+    padding: 7px;
+    font-weight: bolder;
+    width: 70px;
+}
+.to_video{
+    border: none;
+    background-color: yellowgreen;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    padding: 7px;
+    font-weight: bolder;
+    width: 70px;
+}
+.to_music:hover,
+.to_video:hover{
+    box-shadow: 0px 0px 6px white;
+    color: black;
+    background-color: rgb(148, 236, 148);
+}
+/*----------버튼----------*/
+.player_frame{
+    width: 100%;
+    height: 70vh;
+    border: none
+}
+/*음악 부분*/

@@ -1,0 +1,42 @@
+.video_side{
+    text-align: center;
+}
+.video_side video{
+    width: 60vw;
+    height: 40vh;
+}
+.video_side h2{
+    color: white;
+    font-size: 6vw;
+}
+.video_side p{
+    color: rgba(255, 255, 255, 0.842);
+    text-align: center;
+    font-size: 4vw;
+}
+
+div.prograss{
+    margin-top: 40px;
+}
+progress{
+    width: 55vw;
+}
+a{
+    margin-top: 40px;
+    color: white;
+}
+.imgtool {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 10px;
+}
+
+.imgtool img {
+    width:20px;
+    height: 20px;
+    margin: 0 10px;
+}
