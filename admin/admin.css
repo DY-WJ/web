@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif; /* 페이지 전체의 폰트 설정 */
+    margin: 0;                      /* 기본 여백 제거 */
+    padding: 0;                     /* 기본 패딩 제거 */
+    background-color: #f7f8fc;    /* 페이지 배경 색 설정 */
+}
+
+.sidebar {
+    height: 100vh;                       /* 전체 뷰포트 높이 설정 */
+    width: 250px;                        /* 사이드바 너비 설정 */
+    background-color: rgb(41, 41, 41); /* 사이드바 배경 색 설정 */
+    position: fixed;                     /* 왼쪽에 고정 위치 설정 */
+    top: 0;                              /* 뷰포트의 상단에 맞춤 */
+    left: 0;                             /* 뷰포트의 왼쪽에 맞춤 */
+    padding-top: 20px;                   /* 상단에 패딩 추가 */
+    color: white;                      /* 텍스트 색상을 흰색으로 설정 */
+}
+
+.sidebar a {
+    padding: 15px 20px;    /* 링크에 패딩 추가 */
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    font-size: 18px;       /* 폰트 크기 설정 */
+    color: white;        /* 텍스트 색상을 흰색으로 설정 */
+    display: block;        /* 링크를 블록 요소로 설정 */
+}
+
+.sidebar a:hover {
+    background-color: rgb(24, 24, 24); /* 마우스 오버 시 배경 색 변경 */
+}
+
+.main-content {
+    margin-left: 250px; /* 사이드바와 겹치지 않도록 좌측 여백 추가 */
+    padding: 20px;      /* 콘텐츠 주위에 패딩 추가 */
+}
+
+.header {
+    background-color: rgb(87, 180, 24); /* 헤더 배경 색 설정 */
+    color: white;                        /* 텍스트 색상을 흰색으로 설정 */
+    padding: 20px;                         /* 헤더 주위에 패딩 추가 */
+    text-align: center;                    /* 텍스트 가운데 정렬 */
+}
+
+.content-section {
+    background-color: white;                  /* 섹션 배경 색을 흰색으로 설정 */
+    padding: 20px;                              /* 섹션 주위에 패딩 추가 */
+    margin-bottom: 20px;                        /* 섹션 아래에 여백 추가 */
+    border-radius: 8px;                         /* 섹션의 모서리 둥글게 설정 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 섬세한 그림자 추가 */
+}
+
+.content-section h2 {
+    margin-top: 0; /* 헤더의 상단 여백 제거 */
+}
+
+.table-container {
+    overflow-y: auto;  /* 세로 스크롤 허용 */
+    max-height: 300px; /* 컨테이너 최대 높이 설정 */
+    margin-top: 10px;  /* 컨테이너 상단 여백 추가 */
+}
+
+table {
+    width: 100%;               /* 테이블 너비를 전체로 설정 */
+    border-collapse: collapse; /* 테이블 테두리 겹치기 */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* 테이블, 헤더, 셀에 테두리 추가 */
+}
+
+th, td {
+    padding: 12px;    /* 테이블 헤더와 셀 안쪽에 패딩 추가 */
+    text-align: left; /* 테이블 헤더와 셀의 텍스트를 왼쪽 정렬 */
+}
+
+th {
+    background-color: #f2f2f2; /* 테이블 헤더의 배경 색 설정 */
+}
+
+.action-links a {
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    color: #3498db;      /* 링크 색상 설정 */
+    margin-right: 10px;    /* 링크 오른쪽에 여백 추가 */
+}
+
+.action-links a:hover {
+    text-decoration: underline; /* 마우스 오버 시 밑줄 추가 */
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;        /* 작은 화면에서 사이드바를 전체 너비로 설정 */
+        height: auto;       /* 사이드바 높이를 자동으로 조정 */
+        position: relative; /* 위치를 상대적으로 설정 */
+    }
+    .main-content {
+        margin-left: 0; /* 작은 화면에서 좌측 여백 제거 */
+    }
+}
