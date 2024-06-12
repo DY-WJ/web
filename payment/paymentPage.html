@@ -101,24 +101,28 @@
 
                         <hr>
                         <tr>
-                            <td colspan="4" rowspan="4"></td>
+                            <td colspan="4" rowspan="4" id="noline"></td>
                             <td>가격</td>
+                            <td></td>
                             <td class="amount">100,000
                                 <span>원</span></td>
                         </tr>
                         <tr>
                             <td>할인금액</td>
+                            <td></td>
                             <td class="amount">-50,000
                                 <span>원</span></td>
                         </tr>
                         <tr>
                             <td>배송비</td>
+                            <td></td>
                             <td class="amount">5,000
                                 <span>원</span></td>
                         </tr>
                         <tr>
                             <td id="noline"></td>
-                            <td id="noline" class="amount">55,000
+                            <td id="noline"></td>
+                            <td class="amount">55,000
                                 <span>원</span></td>
                         </tr>
                     </tbody>
@@ -144,20 +148,18 @@
                     </table>
                 </fieldset>
             </div>
-
-            <div id="agreement_checkbox">
-                <h2>약관동의</h2>
-                <ul>
-                    <li>
-                        <label><input type="checkbox" name="agreement_checkbox">개인정보 3자 제공에 동의합니다</label>
-                    </li>
-                    <li>
-                        <label><input type="checkbox" name="agreement_checkbox">결제대행서비스 이용약관에 동의 합니다.</label>
-                    </li>
-                    <li>
-                        <label><input type="checkbox" name="agreement_checkbox">제품의 사용조건과 자사의 취소,환불규정에 동의합니다.</label>
-                    </li>
-                </ul>
+            <div id="buttom_wrapper">
+                <div id="agreement_wrapper">
+                    <div id="agreement_checkbox">
+                        <h2>약관동의</h2>
+                        <ul>
+                            <li><label><input type="checkbox" name="agreement_checkbox">개인정보 3자 제공에 동의합니다</label></li>
+                            <li><label><input type="checkbox" name="agreement_checkbox">결제대행서비스 이용약관에 동의 합니다.</label></li>
+                            <li><label><input type="checkbox" name="agreement_checkbox">제품의 사용조건과 자사의 취소,환불규정에 동의합니다.</label></li>
+                        </ul>
+                    </div>
+                    <canvas id="sign_canvas" style="background-color:aliceblue" width="800px" height="200"></canvas>
+                </div>
             </div>
             <div id="pay">
                 <button id="pay_button" onclick="checkAgreements()">결제하기</button>
@@ -165,21 +167,57 @@
         </div>
 
         <script>
-            function checkAgreements() {
-                var checkboxes = document.getElementsByName('agreement_checkbox');
-                var allChecked = true;
-                for (var i = 0; i < checkboxes.length; i++) {
-                    if (!checkboxes[i].checked) {
-                        allChecked = false;
-                        break;
-                    }
-                }
-                if (!allChecked) {
-                    alert("약관에 모두 동의 해주세요");
-                } else {
-                    window.location.href = "결제완료 페이지";
+        function checkAgreements() {
+            var checkboxes = document.getElementsByName('agreement_checkbox');
+            var allChecked = true;
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (!checkboxes[i].checked) {
+                    allChecked = false;
+                    break;
                 }
             }
+            if (!allChecked) {
+                alert("약관에 모두 동의 해주세요");
+            } else {
+                window.location.href = "결제완료 페이지";
+            }
+        }
+
+        var canvas, context;
+        function init() {
+            canvas = document.getElementById("sign_canvas");
+            context = canvas.getContext("2d");
+
+            context.lineWidth = 2; 
+            context.strokeStyle = "black";
+
+            canvas.addEventListener("mousemove", function (e) { move(e) }, false);
+            canvas.addEventListener("mousedown", function (e) { down(e) }, false);
+            canvas.addEventListener("mouseup", function (e) { up(e) }, false);
+            canvas.addEventListener("mouseout", function (e) { out(e) }, false);
+        }
+
+        var startX=0, startY=0; 
+        var dragging=false;
+        function draw(curX, curY) { 
+            context.beginPath();
+            context.moveTo(startX, startY);
+            context.lineTo(curX, curY);
+            context.stroke();
+        }
+        function down(e) { 
+            startX = e.offsetX; startY = e.offsetY; dragging = true;
+        }
+        function up(e) { dragging = false; }
+        function move(e) {
+            if(!dragging) return; 
+            var curX = e.offsetX, curY = e.offsetY;
+            draw(curX, curY);
+            startX = curX; startY = curY;
+        }
+        function out(e) { dragging = false; }
+
+        window.onload = init; 
         </script>
     </body>
 </html>
