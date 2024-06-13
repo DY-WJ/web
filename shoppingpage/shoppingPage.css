@@ -70,7 +70,7 @@ div.top_back{
     border-style: none;
     cursor: pointer;
     background-color: white;
-    background-image: url("/src/img/ic_search.png");
+    background-image: url("../src/img/ic_search.png");
     background-size: contain;
 }
 

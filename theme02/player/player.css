@@ -15,7 +15,7 @@ a{
     text-align: center;
     margin: auto;
     border-radius: 15px;
-    background-image: url(/src/img/smartphone.png);
+    background-image: url(../../src/img/smartphone.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
