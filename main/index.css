@@ -175,7 +175,7 @@ a.them {
 
 /*--메인이미지--*/
 .main_img {
-    background-image: url(/src/img/background03.JPG);
+    background-image: url(../src/img/background03.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;

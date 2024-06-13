@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     albumBox.addEventListener("click", function(event) {
         if (event.target.tagName === "IMG") {
             var imageUrl = event.target.src;
-            resultFrame.src = "/play/play.html"; // result.html로 변경
+            resultFrame.src = "../play/play.html"; // result.html로 변경
             resultContainer.classList.add("show"); // 결과 컨테이너를 보이도록 함
             overlay.style.display = "block"; // 오버레이를 보이도록 함
         }
