@@ -20,7 +20,7 @@ body {
 }
 
 .all-signup{
-    background-image: url(/src/img/bg_background.jpg);
+    background-image: url(../src/img/bg_background.jpg);
     background-repeat: no-repeat;
     background-position: right center;
     margin: 0  auto;

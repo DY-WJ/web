@@ -15,12 +15,12 @@
                     <h1>Login</h1>
                 </header>
                 <section class="inputlist">
-                    <form action="/signup.html" method="post">
+                    <form action="../signup.html" method="post">
                         <input type="text" name="ID" placeholder="아이디" class="inputbox" id="id"><br>
                         <input type="password" name="PASSWORD" placeholder="비밀번호" class="inputbox" id="password"><br>
                         <div class="loginsign">
-                            <a class="signupbtn" href="/signup/signup.html">Sign up</a>
-                            <a class="login" href="/main/index.html" id="login">Log in</a>
+                            <a class="signupbtn" href="../signup/signup.html">Sign up</a>
+                            <a class="login" href="../main/index.html" id="login">Log in</a>
                         </div>
                     </form>
                 </section>
@@ -42,7 +42,7 @@
         document.getElementById('login').addEventListener('click', function(event) {
             event.preventDefault();
             if (window.confirm('화석님! 반갑습니다.')) {
-                window.location.href = '/main/index.html'; // 확인 시 페이지 이동
+                window.location.href = '../main/index.html'; // 확인 시 페이지 이동
             }
         });
     </script>

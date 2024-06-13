@@ -15,7 +15,7 @@
                     <h1>WELCOM !</h1>
                 </header>
                 <section class="inputlist">
-                    <form id="signupForm" action="/signup.html" method="post">
+                    <form id="signupForm" action="./signup.html" method="post">
                         <input type="text" placeholder="이름" class="inputbox" id="name" required><br>
                         <input type="text" name="ID" placeholder="아이디" class="inputbox" id="id" required><br>
                         <input type="password" name="PASSWORD" placeholder="비밀번호" class="inputbox" id="password" required><br>
@@ -68,7 +68,7 @@
         document.getElementById('signupComplete').addEventListener('click', function() {
             if (document.getElementById('checkbox').checked) {
                 if (confirm('회원가입을 완료하시겠습니까?')) {
-                    window.location.href = '/login/logins.html'; // 확인 시 페이지 이동
+                    window.location.href = '../login/logins.html'; // 확인 시 페이지 이동
                 }
             } else {
                 alert('이용약관에 동의해주세요.');
